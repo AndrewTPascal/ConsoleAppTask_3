@@ -6,15 +6,15 @@ namespace ConsoleAppTask_3
     {
         static void Main(string[] args)
         {
-            string Name = "Jane";
-            byte Age = 27;
-            bool Pet = true;
-            float Size = 27.5F;
-
-            Console.WriteLine("My name is {0}", Name);
-            Console.WriteLine("My age is {0}", Age);
-            Console.WriteLine("Do I have a pet? {0}", Pet);
-            Console.WriteLine("My shoe size is {0}", Size);
+            Console.Write("Enter your name: ");
+            string Name = Console.ReadLine();
+            Console.Write("Enter your age: ");
+            byte Age = byte.Parse(Console.ReadLine());
+            Console.WriteLine("Your name {0}, your age {1}", Name, Age);
+            Console.Write("Enter your birthdate: ");
+            var Birth = Console.ReadLine();
+            Console.Write("Your birthdate is: " + Birth);
         }
     }
+
 }
